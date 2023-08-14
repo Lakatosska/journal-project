@@ -4,7 +4,9 @@
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "jsx": "react",
+    // "react-jsx", а не react, 
+    // чтобы не надо было его импортировать (с 17 версии)
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     // для абсолютного импорта
