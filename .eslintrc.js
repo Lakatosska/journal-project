@@ -1,7 +1,8 @@
 module.exports = {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true,
   },
   "extends": [
     "standard-with-typescript",
@@ -11,7 +12,7 @@ module.exports = {
   "overrides": [
     {
       "env": {
-          "node": true
+          "node": true,
       },
       "files": [
           ".eslintrc.{js,cjs}"
@@ -46,6 +47,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'max-len': ['error', { ignoreComments: true }],
   },
   globals: {
     __IS_DEV__: true,
